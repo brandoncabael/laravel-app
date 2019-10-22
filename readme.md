@@ -12,6 +12,12 @@
 git clone https://github.com/brandoncabael/laravel-app.git ~/laravel-app
 ```
 
+* Create a .env file in the root directory of the repo:
+```
+cd ~/laravel-app
+cp .env.example .env
+```
+
 * Use docker's composer image to mount the directories for the Laravel Project:
 ```
 docker run --rm -v $(pwd):/app composer install
